@@ -1,4 +1,4 @@
-// let myImage;
+let myImage;
 let socket = io();
 let myColor ="white";
 
@@ -24,22 +24,20 @@ function drawOtherMouse(data){
 
 function preload(){
   // put preload code here
-  // myImage = loadImage(".public/assets/images/Mappa.png");
+ myImage = loadImage("./assets /images/Mappa.png");
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight)
-  // put setup code here
+  createCanvas(windowWidth,windowHeight);
   background("LightSkyBlue");
-
-
+  // put setup code here
 }
-
 function draw() {
   // put drawing code here
-// imageMode(CENTER);
-// image(myImage, width / 2, height / 2, myImage.width / 1.8, myImage.height / 1.8)
+imageMode(CENTER);
+image(myImage, width / 2, height / 2, myImage.width / 3, myImage.height /3)
 }
+
 
 function mouseDragged(){
   push();
