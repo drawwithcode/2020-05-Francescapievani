@@ -37,15 +37,12 @@ function preload(){
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  background("LightSkyBlue");
+  background(myImage);
   // put setup code here
 }
 
 
 function draw() {
-  // put drawing code here
-imageMode(CENTER);
-image(myImage, width / 2, height / 2, myImage.width / 3, myImage.height /3)
 
 //titolo sfondo
 push();
@@ -59,7 +56,7 @@ pop();
 
 push();
 let myText2 = "Color on the map your dreaming place in the world and discover other people's dream";
-fill("blue");
+fill("orange");
 textFont("Nerko One");
 textAlign(CENTER);
 textSize(35);
