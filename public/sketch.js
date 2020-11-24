@@ -10,9 +10,6 @@ socket.on("newPlayer", newPlayer);
 function newPlayer(newPlayerColor) {
   console.log(newPlayerColor);
   push();
-  noStroke();
-  fill("LightSkyBlue");
-  rect(windowWidth/2, 800, 55, 55);
   textFont("Nerko One")
   textSize(25);
   textAlign(CENTER);
