@@ -10,15 +10,14 @@ socket.on("newPlayer", newPlayer);
 function newPlayer(newPlayerColor) {
   console.log(newPlayerColor);
   push();
-  fill("white");
-  rectMode(CENTER);
   noStroke();
-  rect(width / 2, height / 10 * 9, windowwidth/2, windowheight/2);
+  fill("LightSkyBlue");
+  rect(windowWidth/2, 800, 55, 55);
   textFont("Nerko One")
   textSize(25);
   textAlign(CENTER);
   fill(newPlayerColor);
-  text("New traveler joined: " + newPlayerColor, width / 2, height / 10 * 9);
+  text("New traveler joined: " + newPlayerColor, windowWidth / 2, 800);
   pop();
 }
 
@@ -64,7 +63,7 @@ fill("blue");
 textFont("Nerko One");
 textAlign(CENTER);
 textSize(35);
-text(myText2,windowWidth/2, 900);
+text(myText2,windowWidth/2, 850);
 pop();
 
 
