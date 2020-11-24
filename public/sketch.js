@@ -42,14 +42,6 @@ function setup() {
   // put setup code here
 }
 
-function drawOtherMouse(data){
-  push();
-stroke(data.color);
-strokeWeight(7);
-  line(data.x, data.y, data.x2, data.y2);
-  pop();
-}
-
 
 function draw() {
   // put drawing code here
@@ -59,7 +51,7 @@ image(myImage, width / 2, height / 2, myImage.width / 3, myImage.height /3)
 //titolo sfondo
 push();
 let myText = "Where will be your first trip after Covid?";
-fill("red");
+fill("black");
 textFont("Nerko One");
 textAlign(CENTER);
 textSize(40);
@@ -76,6 +68,14 @@ text(myText2,windowWidth/2, 900);
 pop();
 
 
+}
+
+function drawOtherMouse(data){
+  push();
+stroke(data.color);
+strokeWeight(7);
+  line(data.x, data.y, data.x2, data.y2);
+  pop();
 }
 
 function mouseDragged(){
